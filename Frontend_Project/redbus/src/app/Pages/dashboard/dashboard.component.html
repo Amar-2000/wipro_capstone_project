@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <title>Ticket Booking</title>   
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>ReadyBus</h1>
+        </div>
+        <div>
+          <button (click)="signout()" type="submit" class="btn btn-light text-danger w-100">SIGNOUT</button>
+        </div>
+        
+    </nav>
+    <section>
+        <div class="content">
+            <h1 >Your Safe Travel Journey Is Our Main Goal</h1>
+            <p >A road trip is a way for the whole family to spend time together and annoy each other in interesting new places</p>
+            
+        </div>
+        <section>
+          <div class="container mt-5 d-flex justify-content-center">
+              <form class="search-form d-flex align-items-center shadow-lg" [formGroup]="searchBusForm">
+                <div class="row w-100 text-white">
+                  <div class="col-md-3 d-flex align-items-center">
+                    <div class="input-group">
+                      
+                      <input type="text" class="form-control" placeholder="Source" name="source" formControlName="source">
+                    </div>
+                  </div>
+                  <div class="col-md-1 text-center d-flex align-items-center justify-content-center">
+                    <i class="bi bi-arrow-left-right fs-3"></i>
+                  </div>
+                  <div class="col-md-3 d-flex align-items-center">
+                    <div class="input-group">
+                      
+                      <input type="text" class="form-control" placeholder="Destinstion" name="destination" formControlName="destination">
+                    </div>
+                  </div>
+                  <div class="col-md-3 d-flex align-items-center">
+                    <div class="input-group">
+                      
+                      <input type="date" class="form-control" placeholder="yyyy-mm-dd" name="date" formControlName="date">
+                    </div>
+                  </div>
+                  <div class="col-md-2 text-center">
+                    <button (click)="searching()" type="submit" class="btn btn-light text-danger w-100">SEARCH BUSES</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+      </section>
+    </section>
+
+   
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

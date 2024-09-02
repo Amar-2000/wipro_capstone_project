@@ -1,0 +1,82 @@
+
+.search-form {
+  background-color: #F05A58; /* Background color similar to the image */
+  padding: 20px;
+  border-radius: 40px;
+}
+.search-form .form-control {
+  border-radius: 20px;
+}
+.search-form button {
+  border-radius: 20px;
+}
+.search-form .input-group-text {
+  background-color: transparent;
+  border: none;
+}
+
+.bus-layout {
+background-color: #f8f9fa;
+padding: 20px;
+border-radius: 10px;
+width: 400px;
+margin: auto;
+}
+.seat {
+width: 30px;
+height: 30px;
+margin: 5px;
+border: 2px solid #ddd;
+border-radius: 5px;
+cursor: pointer;
+}
+.seat.available {
+background-color: #fff;
+}
+.seat.selected {
+background-color: #F05A58;
+}
+.seat.reserved {
+background-color: #A9A9A9;
+cursor: not-allowed;
+}
+.driver {
+width: 30px;
+height: 30px;
+margin-right: 10px;
+}
+#buses-list{
+  /* background-image:url('https://images.pexels.com/photos/68427/pexels-photo-68427.jpeg?auto=compress&cs=tinysrgb&w=600') ; */
+  background-size: cover;
+  background-color: #e52f41;
+  background-position: absolute;
+  height: 100%;
+  padding-top:50px;
+  margin: 0;
+  
+}
+h2{
+  color:white;
+  padding: 50px;
+}
+.col-12{
+  margin: 30px;
+  padding-left: 10px;
+  padding-left: 10px;
+  animation: slideIn 1.5s ease-out;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+}
+.card-title{
+  font-weight: bold;
+  font-size:larger;
+}

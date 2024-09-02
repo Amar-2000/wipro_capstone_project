@@ -1,0 +1,15 @@
+body{background: #f5f5f5}.rounded{border-radius: 1rem}.nav-pills .nav-link{color: #555}.nav-pills .nav-link.active{color: white}input[type="radio"]{margin-right: 5px}.bold{font-weight:bold}
+.fullImage{
+    /* background-color: #e52f41; */
+    background-image:url('https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=800') ;
+    background-size: cover;
+    background-position: center;
+}
+.display-6{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+.nav-item{
+    font-weight: bold;
+}

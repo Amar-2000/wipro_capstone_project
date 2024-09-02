@@ -1,0 +1,77 @@
+
+<div class="fullImage">
+<div class="container py-5">
+    <!-- For demo purpose -->
+    <div class="row mb-4">
+        <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-6">Confirm your payment</h1>
+        </div>
+    </div> <!-- End -->
+    <div class="row">
+        <div class="col-lg-6 mx-auto">
+            <div class="card ">
+                <div class="card-header">
+                    <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                        <!-- Credit card form tabs -->
+                        <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                            <li class="nav-item"> <a (click)="toggleForm('card')" > <i class="fas fa-credit-card mr-2"></i>  Card </a> </li>
+                            <li class="nav-item"> <a (click)="toggleForm('upi')" > <i class="fab fa-paypal mr-2"></i> UPI </a> </li>
+                            
+                        </ul>
+                    </div> <!-- End -->
+                    <!-- Credit card form content -->
+                    <div class="tab-content">
+                        <!-- credit card info-->
+                        <div id="credit-card" class="tab-pane fade show active pt-3">
+                            <div role="form" onsubmit="event.preventDefault()">
+                                <div class="form-group"> <label for="username">
+                                        <h6>Card Owner</h6>
+                                    </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control " [(ngModel)]="userName"> </div>
+                                <div class="form-group"> <label for="cardNumber">
+                                        <h6>Card number</h6>
+                                    </label>
+                                    <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required [(ngModel)]="cardNumber">
+                                        <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group"> <label><span class="hidden-xs">
+                                                    <h6>Expiration Date</h6>
+                                                </span></label>
+                                            <div class="input-group"> <input type="date" placeholder="MM" name="date" class="form-control" required [(ngModel)]="DATE">  </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
+                                                <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                            </label> <input type="text" required class="form-control" [(ngModel)]="CVV"> </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer"> 
+                                    <button (click)="topup()" type="button" class="subscribe btn btn-primary btn-block shadow-sm"> PayNow </button>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                            <h6 class="pb-2">UPI</h6>
+                           
+                            <input [(ngModel)]="upiID" type="text" name="upiID" placeholder="Enter UPI Id" required class="form-control " > 
+                            <div class="card-footer"> 
+                                <button (click)="top()" type="button" class="subscribe btn btn-primary btn-block shadow-sm"> PayNow </button>
+                            </div>
+                       
+                            <p class="text-muted"> Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website . </p>
+                        </div> 
+                       
+                    </div>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+       
+    </script>
