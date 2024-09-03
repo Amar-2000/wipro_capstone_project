@@ -19,6 +19,11 @@ public class UserServiceImpl implements UserService
 	
 	
 
+	/*
+	 * this methoed take one parameter of type User
+	 * and return string 
+	 * this method check if the user is already register or not if the user is already register
+	 * then it will show to user like user is already registered  */
 	@Override
 	public String userRegister(User user) {
 	    User existingUser = userRepo.findByEmail(user.getEmail());
@@ -33,6 +38,12 @@ public class UserServiceImpl implements UserService
 	    return "You have registered successfully";
 	}
 
+	
+	/*
+	 * this method takes two parameters both of type String 
+	 * and return string 
+	 * this method check the if the user email and password is equals to the database data then it will
+	 * return login succeful otherwise it will return plase enter valid details*/
 	@Override
 	public String userLogin(String email, String password) {
 	

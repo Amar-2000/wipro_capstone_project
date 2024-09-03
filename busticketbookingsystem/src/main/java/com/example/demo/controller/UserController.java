@@ -22,6 +22,9 @@ public class UserController
 	private UserService userService;
 	
 	
+	/*
+	 * this method take one parameter of type user and return a string
+	 * it takes the request from the client and return string as a response */
 	@PostMapping("/register")
 	public String register(@RequestBody User user) {
 		
@@ -29,7 +32,10 @@ public class UserController
 		
 	}
 	
-	
+	/*
+	 * this method take two parameter both of type String and return a string
+	 * get the request from the client and
+	 * return string as a response */
 	@GetMapping("/login")
 	public String login(@RequestParam String email, @RequestParam String password) {
 		

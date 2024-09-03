@@ -27,7 +27,7 @@ public class User
 
 
 	public User(Integer userId, String name, String email, String contact, String password, String confirmPass) {
-		super();
+		
 		this.userId = userId;
 		this.name = name;
 		this.email = email;

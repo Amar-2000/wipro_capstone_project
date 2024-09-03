@@ -21,6 +21,13 @@ public class BookingController {
 	@Autowired
 	BusService busService;
 	
+	
+	// 
+	/*
+	 * this method take one parameter of type BoolingDetails
+	 *  and return a list of BusEntity 
+	 * we use postmapping annotation it will take the request from the client and send responce back to the client
+	 * */
 	@PostMapping("search-buses")
 	List<BusEntity> getBuses(@RequestBody BookingDetails bookingDetails) {
 		return busService.searchBus(bookingDetails);

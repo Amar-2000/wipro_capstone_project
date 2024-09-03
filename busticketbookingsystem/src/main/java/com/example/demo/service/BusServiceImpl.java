@@ -19,6 +19,9 @@ public class BusServiceImpl implements BusService {
 	@Autowired
 	private BusRepository busRepository;
 	
+	
+	/*
+	 * this method take one parameter of type BookDetails and the returns the list of BusEntity*/
 	@Override
 	public List<BusEntity> searchBus(BookingDetails bookingDetails) {
 		List<BusEntity> busesData = busRepository.findAll();
